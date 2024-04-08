@@ -1,6 +1,18 @@
 body {
-    background-image: url(Kuliner\ indonesia.jpeg);
+    background-image: url(kuliner\ indonesia.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    color: whitesmoke;
+}
+
+.image {
+    display: flex;
+    justify-content: space-between;
+}
+.image img {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 2px solid black;
 }
