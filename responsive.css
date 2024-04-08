@@ -16,3 +16,18 @@ body {
     margin-bottom: 20px;
     border: 2px solid black;
 }
+
+.fotoMakanan {
+    display: flex;
+    flex-wrap: wrap; 
+}
+.fotoMakanan img {
+    width: calc(100% / 3 - 10px); 
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+    .fotoMakanan img {
+        width: calc(100% - 10px); 
+    }
+}
