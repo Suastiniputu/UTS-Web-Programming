@@ -1,35 +1,60 @@
 body {
-    background-image: url(kuliner\ indonesia.png);
+    background-image: url("kuliner indonesia.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
+    padding: 20px;
 
 }
 
-.image {
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+nav ul {
     display: flex;
+    color: rgb(206, 191, 220);
+    list-style: none;
+    width: 80%;
     justify-content: space-between;
-}
-.image img {
-    width: 30%;
-    margin-bottom: 20px;
-    border: 2px solid black;
+    
 }
 
-.fotoMakanan {
-    display: flex;
-    flex-wrap: wrap; 
-}
-.fotoMakanan img {
-    width: calc(100% / 3 - 10px); 
-    border: 1px solid black;
+nav ul li a {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    color: rgb(202, 192, 211);
+    text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
-    .fotoMakanan img {
-        width: calc(100% - 10px); 
+
+
+
+@media screen  and (max-width: 768px) {
+   nav ul li a {
+    width: 50%;
+   }
+}
+
+@media screen  and (max-width: 500px) {
+    nav ul li a {
+        display: none;
     }
+}
+
+.zoom:hover {
+    transform: scale(1,2);
+}
+
+#Resep {
+    list-style: none;
 }

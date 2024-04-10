@@ -4,39 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web</title>
     <link rel="stylesheet" href="responsive.css">
+    <title>Responsive Web</title>
 </head>
+<style>
+    .image {
+    display: flex;
+    justify-content: space-between;
+}
+.image img {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+.fotoMakanan {
+    display: flex;
+    flex-wrap: wrap; 
+}
+.fotoMakanan img {
+    width: calc(100% / 3 - 10px); 
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+    .fotoMakanan img {
+        width: calc(100% - 10px); 
+    }
+}
+</style>
 <body>
     <header>
         <h1>Kuliner Khas Indonesia</h1>
         <nav>
             <ul>
-                <li><a href="Beranda">Beranda</a></li>
-                <li><a href="Resep">Resep</a></li>
-                <li><a href="Tempat Makan">Tempat Makan</a></li>
-                <li><a href="Foto">Foto</a></li>
-                <li><a href="Order">Order</a></li>
+                <li><a href="#Beranda" class="zoom">Beranda</a></li>
+                <li><a href="#Resep" class="zoom">Resep</a></li>
+                <li><a href="#TempatMakan" class="zoom">Tempat Makan</a></li>
+                <li><a href="#Foto" class="zoom">Foto</a></li>
+                <li><a href="#Order" class="zoom">Order</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-       <section class="Beranda">
+       <section id="Beranda">
         <h2>Beranda</h2>
         <p>Website ini menampilkan ragam kuliner khas Indonesia yang menggugah selera dan pastinya memikat lidah.
             Temukan kelezatan makanan dari berbagai daerah yang kaya akan rempah-rempah dan bumbu tradisional.
-            Jelajahi keanekaragaman masakan dari Sabang sampai Merauke, dan temukan rahasia di balik setiaphidangan yang menjadikan Indonesia sebagai surga bagi pecinta kuliner.
+            Jelajahi keanekaragaman masakan dari Sabang sampai Merauke, dan temukan rahasia di balik setiap hidangan yang menjadikan Indonesia sebagai surga bagi pecinta kuliner.
             Mari menikmati keindahan cita rasa dan kekayaan buaya melalui halaman beranda kami.
         </p>
        </section> 
 
-       <section class="Resep">
+       <section id="Resep">
         <h2>Aneka Ragam Resep</h2>
         <p>Berikut adalah beberapa resep yang mungkin bisa kamu coba di rumah.
             Kuliner khas Indonesia yang kaya akan rasa dan aroma yang memikat.
         </p>
         
+        <nav>
         <ul>
             <li><a href="https://www.beritasatu.com/lifestyle/2792049/5-resep-masakan-khas-papua-mulai-dari-ikan-bakar-hingga-aunuve-habre" target="_blank">Resep Makanan Khas Papua</a></li>
             <li><a href="https://www.yummy.co.id/artikel/kuliner/makanan-maluku" target="_blank">Resep Makanan Khas Maluku</a></li>
@@ -47,9 +74,10 @@
             <li><a href="https://resepkoki.id/10-resep-makanan-khas-sumatra-paling-disukai/" target="_blank">Resep Makanan Khas Sumatera</a></li>
             <li><a href="https://www.briliofood.net/resep/10-resep-makanan-khas-aceh-paling-enak-sederhana-dan-mudah-dibuat-200722r.html" target="_blank">Resep Makanan Khas Aceh</a></li>
         </ul>
+    </nav>
        </section>
 
-       <section>
+       <section id="TempatMakan">
         <h2>Tempat Makan Kuliner Khas Indonesia</h2>
         <p>Anak kost masih ada yang kebingungan tiap harinya mau makan apa? 
             Ini ada beberapa rekomendasi tempat makanan khas Indonesia yang mungkin tertarik buat kamu cobain nih.
@@ -62,6 +90,7 @@
         </div>
        </section>
 
+       <section id="Foto">
        <h2>Galeri Kuliner Khas Indonesia</h2>
        <p>Galeri kuliner khas Indonesia ini akan menampilkan beberapa gambar dari makanan khas Indonesia yang pastinya bikin kamu ngiler!!</p>
        <div class="fotoMakanan">
@@ -72,16 +101,23 @@
             <img src="rendang.jpeg" alt="Rendang">
             <img src="sateLilit.jpeg" alt="Sate Lilit">
        </div>
+    </section>
 
+    <section id="Order">
        <h2>Order Kuliner Khas Indonesia</h2>
        <p>Jika kamu ingin memesan kuliner khas Indonesia tapi kamu sedang tidak ingin pergi keluar, ini dia solusinya.</p>
+       <nav>
        <ul>
         <li><a href="https://food.grab.com/" target="_blank">Pemesanan via Grab.</a></li>
         <li><a href="https://www.gojek.com/gofood" target="_blank">Pemesanan via Gojek</a></li>
         <li><a href="https://shopee.co.id/m/shopeefood" target="_blank">Pemesanan via Shopee</a></li>
        </ul>
+    </nav>
+    </section>
     </main>
 
-    
+    <footer>
+        <h5>&copy; 2024 Ragam Kuliner Khas Indonesia</h5>
+    </footer>
 </body>
 </html>
